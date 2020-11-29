@@ -1,0 +1,44 @@
+[comment encoding = UTF-8 /]
+[module generateRelationNotation('http://www.example.org/diagramaClasesCompleto')]
+ 
+[template public generateRelationOneToOne(i : Relacion)]
+	@OneToOne(cascade= CascadeType.ALL)
+	@JoinColumn(name="fk_[i.destino.nombre/]")
+[/template]
+[template public generateRelationOneToMany(i : Relacion)]
+	@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+[/template]
+[template public generateRelationManyToOne(i : Relacion)]
+	@ManyToOne(cascade= CascadeType.PERSIST)
+	@JoinColumn(name="fk_[i.destino.nombre/]")
+[/template]
+[template public generateRelationManyToMany(i : Relacion)]
+	@ManyToMany(cascade= CascadeType.ALL)
+	@JoinTable(name="[i.origen.nombre/]_[i.destino.nombre/]",
+	joinColumns=@JoinColumn(name="[i.origen.nombre/]"),
+	inverseJoinColumns=@JoinColumn(name="[i.destino.nombre/]"))
+	@Default
+[/template]
+[template public generateBidirectionalDestinoManyToMany(i : Relacion)]
+	@ManyToMany(mappedBy= "[i.nombre/]")
+	@Default
+[/template]
+[template public generateBidirectionalOrigenManyToMany(i : Relacion)]
+	@ManyToMany(cascade= {CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinTable(name="[i.origen.nombre/]_[i.destino.nombre/]",
+	joinColumns=@JoinColumn(name="[i.origen.nombre/]"),
+	inverseJoinColumns=@JoinColumn(name="[i.destino.nombre/]"))
+	@Default
+	@Exclude
+[/template]
+[template public generateBidirectionalOrigenOneToMany(i : Relacion)]
+	@OneToMany(mappedBy= "[i.nombre/]", cascade=CascadeType.ALL, orphanRemoval = True)
+	@Default
+[/template]
+[template public generateBidirectionalDestinoOneToMany(i : Relacion)]
+	@ManyToOne(cascade= CascadeType.PERSIST)
+	@JoinColumn(name="fk_[i.origen.nombre/]")
+[/template]
+[template public generateBidirectionalDestinoOneToOne(i : Relacion)]
+	@OneToOne(mappedBy = "[i.nombre/]")
+[/template]

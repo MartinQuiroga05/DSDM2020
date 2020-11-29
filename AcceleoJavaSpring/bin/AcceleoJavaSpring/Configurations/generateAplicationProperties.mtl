@@ -1,0 +1,25 @@
+[comment encoding = UTF-8 /]
+[module generateAplicationProperties('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generateAplicationProperties(raiz : DiagramaClases)]
+
+[file ('src/main/resources/application.properties', false, 'UTF-8')]
+spring.datasource.url=jdbc:[raiz.configuraciondb.tipoProveedor/]://[raiz.configuraciondb.ip/]:[raiz.configuraciondb.dbPuerto/]/[raiz.configuraciondb.dbNombre/]?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+spring.datasource.username=[raiz.configuraciondb.dbUsuario/]
+spring.datasource.password=[raiz.configuraciondb.dbContrasena/]
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+
+#Variable de entorno
+server.port=[raiz.configuraciondb.serverPuerto/]
+
+[for (i : ConfiguracionMicroservicios| raiz.configuracionmicroservicios)]
+eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+eureka.client.service-url.defaultZone=http://[i.ipDiscovery/]:[i.puertoDiscovery/]/eureka
+[/for]
+
+[/file]
+[/template]

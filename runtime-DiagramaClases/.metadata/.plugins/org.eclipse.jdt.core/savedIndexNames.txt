@@ -1,0 +1,25 @@
+INDEX VERSION 1.131+C:\Users\marti\runtime-DiagramaClases\.metadata\.plugins\org.eclipse.jdt.core
+595283375.index
+1353388499.index
+944001556.index
+1606391122.index
+2153095070.index
+3726675478.index
+1268637890.index
+1643216506.index
+2506255058.index
+4088013383.index
+1321129129.index
+3268136512.index
+782395699.index
+1875861596.index
+3909818805.index
+3786258485.index
+2321570038.index
+3199285663.index
+2302319814.index
+1585646054.index
+3528263227.index
+2639795746.index
+500296402.index
+3571962713.index

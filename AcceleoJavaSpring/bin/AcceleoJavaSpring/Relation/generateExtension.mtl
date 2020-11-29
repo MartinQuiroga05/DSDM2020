@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generateExtension('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generateExtension(c : Clase)]
+[if (c.herencias_contenidas->size()=1)]
+	extends [c.herencias_contenidas.destino.nombre/]
+[elseif (c.herencias_contenidas->size()=0)]
+	extends Base
+[/if]
+[/template]

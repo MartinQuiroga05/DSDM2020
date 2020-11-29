@@ -1,0 +1,5 @@
+[comment encoding = UTF-8 /]
+[module queryString('http://www.example.org/diagramaClasesCompleto')]
+
+
+[query public queryString (anArtefacto : Artefacto) : OclAny = self/]

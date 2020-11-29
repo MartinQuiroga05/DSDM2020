@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateOperation" nsURI="AcceleoJavaSpring::Operation::generateOperation" startHeaderPosition="30" endHeaderPosition="257">
+    <input>
+      <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateOperation" visibility="Public">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//ModicadoresAcceso"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/visibilidad"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="static"/>
+            <ifExpr xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/esStatic"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="final"/>
+            <ifExpr xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/esFinal"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="(&#xD;&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoDato"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="param" referredVariable="/0/generateOperation/%/%/%.10/param">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Atributo/tipo"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="param" referredVariable="/0/generateOperation/%/%/%.10/param">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;"/>
+            <loopVariable name="param">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:OperationCallExp" eType="/8/OrderedSet(Atributo)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
+              <source xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Retornable)">
+                <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Operacion/parametros_contenidos"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/6/Atributo">
+                <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+              </argument>
+            </iterSet>
+          </body>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="param" referredVariable="/0/generateOperation/%/%/%.11/param">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+            <body xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(ParametroInterno)">
+              <source xsi:type="ocl.ecore:VariableExp" name="param" referredVariable="/0/generateOperation/%/%/%.11/param">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Operacion/parametros_internos"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="),&#xA;"/>
+            <loopVariable name="param">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:OperationCallExp" eType="/8/OrderedSet(Operacion)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
+              <source xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Retornable)">
+                <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Operacion/parametros_contenidos"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/6/Operacion">
+                <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </argument>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="){&#xD;&#xA;"/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="return false;&#xD;&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                </source>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="boolean">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+            </ifExpr>
+          </body>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="return null;&#xD;&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                  </source>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="String">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                  </source>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Date">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="return 0;&#xD;&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                    <source xsi:type="ocl.ecore:OperationCallExp">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                        </source>
+                      </source>
+                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="int">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:OperationCallExp">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                        </source>
+                      </source>
+                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="double">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <source xsi:type="ocl.ecore:PropertyCallExp">
+                        <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                        <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                      </source>
+                    </source>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="float">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                      <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                    </source>
+                  </source>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="byte">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%/o">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+                  </source>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="char">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}&#xD;&#xA;"/>
+          <loopVariable name="o">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Operacion)">
+            <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateOperation/c">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/operaciones_contenidas"/>
+          </iterSet>
+        </body>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateOperation/c">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/6/Clase">
+            <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+        </ifExpr>
+        <else>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="public static final "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//TipoRetorno"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%.2/%/o">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Operacion/tipoRetorno"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="o" referredVariable="/0/generateOperation/%/%.2/%/o">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=");&#xD;&#xA;"/>
+            <loopVariable name="o">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Operacion)">
+              <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateOperation/c">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//Clasificador/operaciones_contenidas"/>
+            </iterSet>
+          </body>
+        </else>
+      </body>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateOperation">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateOperation"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+      <eOperations name="toString">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+      <eOperations name="filter">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+        <eParameters name="filter">
+          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_Clasificador_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Clase">
+      <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Atributo">
+      <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Operacion">
+      <referredType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Operacion)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Retornable)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Retornable"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Atributo)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(ParametroInterno)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//ParametroInterno"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clasificador"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateOperation">
+      <details key="start" value="109"/>
+      <details key="end" value="1203"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateOperation/%">
+      <details key="start" value="164"/>
+      <details key="end" value="1190"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateOperation/%/%">
+      <details key="start" value="193"/>
+      <details key="end" value="1032"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateOperation/%/%/%">
+      <details key="start" value="244"/>
+      <details key="end" value="257"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateOperation/%/%/%/o">
+      <details key="start" value="244"/>
+      <details key="end" value="245"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateOperation/%/%/%.1">
+      <details key="start" value="259"/>
+      <details key="end" value="260"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateOperation/%/%/%.2">
+      <details key="start" value="260"/>
+      <details key="end" value="288"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateOperation/%/%/%.2/%">
+      <details key="start" value="277"/>
+      <details key="end" value="283"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateOperation/%/%/%.2/%.1">
+      <details key="start" value="264"/>
+      <details key="end" value="276"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateOperation/%/%/%.2/%.1/o">
+      <details key="start" value="265"/>
+      <details key="end" value="266"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateOperation/%/%/%.3">
+      <details key="start" value="288"/>
+      <details key="end" value="289"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateOperation/%/%/%.4">
+      <details key="start" value="289"/>
+      <details key="end" value="315"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateOperation/%/%/%.4/%">
+      <details key="start" value="305"/>
+      <details key="end" value="310"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateOperation/%/%/%.4/%.1">
+      <details key="start" value="293"/>
+      <details key="end" value="304"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateOperation/%/%/%.4/%.1/o">
+      <details key="start" value="294"/>
+      <details key="end" value="295"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateOperation/%/%/%.5">
+      <details key="start" value="315"/>
+      <details key="end" value="316"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateOperation/%/%/%.6">
+      <details key="start" value="317"/>
+      <details key="end" value="330"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateOperation/%/%/%.6/o">
+      <details key="start" value="317"/>
+      <details key="end" value="318"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateOperation/%/%/%.7">
+      <details key="start" value="332"/>
+      <details key="end" value="333"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateOperation/%/%/%.8">
+      <details key="start" value="334"/>
+      <details key="end" value="342"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateOperation/%/%/%.8/o">
+      <details key="start" value="334"/>
+      <details key="end" value="335"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateOperation/%/%/%.9">
+      <details key="start" value="344"/>
+      <details key="end" value="347"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateOperation/%/%/%.10">
+      <details key="start" value="347"/>
+      <details key="end" value="454"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateOperation/%/%/%.10/%">
+      <details key="start" value="416"/>
+      <details key="end" value="417"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateOperation/%/%/%.10/%.1">
+      <details key="start" value="418"/>
+      <details key="end" value="428"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateOperation/%/%/%.10/%.1/param">
+      <details key="start" value="418"/>
+      <details key="end" value="423"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateOperation/%/%/%.10/%.2">
+      <details key="start" value="430"/>
+      <details key="end" value="431"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateOperation/%/%/%.10/%.3">
+      <details key="start" value="432"/>
+      <details key="end" value="444"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateOperation/%/%/%.10/%.3/param">
+      <details key="start" value="432"/>
+      <details key="end" value="437"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateOperation/%/%/%.10/%.4">
+      <details key="start" value="446"/>
+      <details key="end" value="448"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateOperation/%/%/%.10/param">
+      <details key="start" value="353"/>
+      <details key="end" value="369"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateOperation/%/%/%.10/%.5">
+      <details key="start" value="372"/>
+      <details key="end" value="413"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateOperation/%/%/%.10/%.5/%">
+      <details key="start" value="372"/>
+      <details key="end" value="395"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateOperation/%/%/%.10/%.5/%/o">
+      <details key="start" value="372"/>
+      <details key="end" value="373"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateOperation/%/%/%.10/%.5/%.1">
+      <details key="start" value="404"/>
+      <details key="end" value="412"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateOperation/%/%/%.11">
+      <details key="start" value="516"/>
+      <details key="end" value="641"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateOperation/%/%/%.11/%">
+      <details key="start" value="587"/>
+      <details key="end" value="588"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateOperation/%/%/%.11/%.1">
+      <details key="start" value="589"/>
+      <details key="end" value="601"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateOperation/%/%/%.11/%.1/param">
+      <details key="start" value="589"/>
+      <details key="end" value="594"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateOperation/%/%/%.11/%.2">
+      <details key="start" value="603"/>
+      <details key="end" value="604"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateOperation/%/%/%.11/%.3">
+      <details key="start" value="605"/>
+      <details key="end" value="630"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateOperation/%/%/%.11/%.3/param">
+      <details key="start" value="605"/>
+      <details key="end" value="610"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateOperation/%/%/%.11/%.4">
+      <details key="start" value="632"/>
+      <details key="end" value="635"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateOperation/%/%/%.11/param">
+      <details key="start" value="522"/>
+      <details key="end" value="539"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateOperation/%/%/%.11/%.5">
+      <details key="start" value="542"/>
+      <details key="end" value="584"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateOperation/%/%/%.11/%.5/%">
+      <details key="start" value="542"/>
+      <details key="end" value="565"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateOperation/%/%/%.11/%.5/%/o">
+      <details key="start" value="542"/>
+      <details key="end" value="543"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateOperation/%/%/%.11/%.5/%.1">
+      <details key="start" value="574"/>
+      <details key="end" value="583"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateOperation/%/%/%.12">
+      <details key="start" value="643"/>
+      <details key="end" value="647"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateOperation/%/%/%.13">
+      <details key="start" value="647"/>
+      <details key="end" value="710"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateOperation/%/%/%.13/%">
+      <details key="start" value="690"/>
+      <details key="end" value="705"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateOperation/%/%/%.13/%.1">
+      <details key="start" value="651"/>
+      <details key="end" value="687"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateOperation/%/%/%.13/%.1/%">
+      <details key="start" value="652"/>
+      <details key="end" value="676"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateOperation/%/%/%.13/%.1/%/%">
+      <details key="start" value="652"/>
+      <details key="end" value="665"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateOperation/%/%/%.13/%.1/%/%/o">
+      <details key="start" value="652"/>
+      <details key="end" value="653"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateOperation/%/%/%.13/%.1/%.1">
+      <details key="start" value="677"/>
+      <details key="end" value="686"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateOperation/%/%/%.14">
+      <details key="start" value="712"/>
+      <details key="end" value="813"/>
+      <details key="line" value="19"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateOperation/%/%/%.14/%">
+      <details key="start" value="794"/>
+      <details key="end" value="808"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateOperation/%/%/%.14/%.1">
+      <details key="start" value="716"/>
+      <details key="end" value="791"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateOperation/%/%/%.14/%.1/%">
+      <details key="start" value="717"/>
+      <details key="end" value="752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateOperation/%/%/%.14/%.1/%/%">
+      <details key="start" value="718"/>
+      <details key="end" value="742"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateOperation/%/%/%.14/%.1/%/%/%">
+      <details key="start" value="718"/>
+      <details key="end" value="731"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateOperation/%/%/%.14/%.1/%/%/%/o">
+      <details key="start" value="718"/>
+      <details key="end" value="719"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateOperation/%/%/%.14/%.1/%/%.1">
+      <details key="start" value="743"/>
+      <details key="end" value="751"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateOperation/%/%/%.14/%.1/%.1">
+      <details key="start" value="757"/>
+      <details key="end" value="790"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateOperation/%/%/%.14/%.1/%.1/%">
+      <details key="start" value="758"/>
+      <details key="end" value="782"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateOperation/%/%/%.14/%.1/%.1/%/%">
+      <details key="start" value="758"/>
+      <details key="end" value="771"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateOperation/%/%/%.14/%.1/%.1/%/%/o">
+      <details key="start" value="758"/>
+      <details key="end" value="759"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateOperation/%/%/%.14/%.1/%.1/%.1">
+      <details key="start" value="783"/>
+      <details key="end" value="789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateOperation/%/%/%.15">
+      <details key="start" value="815"/>
+      <details key="end" value="1023"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateOperation/%/%/%.15/%">
+      <details key="start" value="1007"/>
+      <details key="end" value="1018"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateOperation/%/%/%.15/%.1">
+      <details key="start" value="819"/>
+      <details key="end" value="1004"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generateOperation/%/%/%.15/%.1/%">
+      <details key="start" value="820"/>
+      <details key="end" value="966"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generateOperation/%/%/%.15/%.1/%/%">
+      <details key="start" value="820"/>
+      <details key="end" value="929"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generateOperation/%/%/%.15/%.1/%/%/%">
+      <details key="start" value="820"/>
+      <details key="end" value="891"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%">
+      <details key="start" value="820"/>
+      <details key="end" value="852"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%/%">
+      <details key="start" value="821"/>
+      <details key="end" value="845"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%/%/%">
+      <details key="start" value="821"/>
+      <details key="end" value="834"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%/%/%/o">
+      <details key="start" value="821"/>
+      <details key="end" value="822"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%/%.1">
+      <details key="start" value="846"/>
+      <details key="end" value="851"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%.1">
+      <details key="start" value="856"/>
+      <details key="end" value="891"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%.1/%">
+      <details key="start" value="857"/>
+      <details key="end" value="881"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%.1/%/%">
+      <details key="start" value="857"/>
+      <details key="end" value="870"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%.1/%/%/o">
+      <details key="start" value="857"/>
+      <details key="end" value="858"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateOperation/%/%/%.15/%.1/%/%/%/%.1/%.1">
+      <details key="start" value="882"/>
+      <details key="end" value="890"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateOperation/%/%/%.15/%.1/%/%/%.1">
+      <details key="start" value="895"/>
+      <details key="end" value="929"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/generateOperation/%/%/%.15/%.1/%/%/%.1/%">
+      <details key="start" value="896"/>
+      <details key="end" value="920"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/generateOperation/%/%/%.15/%.1/%/%/%.1/%/%">
+      <details key="start" value="896"/>
+      <details key="end" value="909"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/generateOperation/%/%/%.15/%.1/%/%/%.1/%/%/o">
+      <details key="start" value="896"/>
+      <details key="end" value="897"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/generateOperation/%/%/%.15/%.1/%/%/%.1/%.1">
+      <details key="start" value="921"/>
+      <details key="end" value="928"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/generateOperation/%/%/%.15/%.1/%/%.1">
+      <details key="start" value="933"/>
+      <details key="end" value="966"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/generateOperation/%/%/%.15/%.1/%/%.1/%">
+      <details key="start" value="934"/>
+      <details key="end" value="958"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/generateOperation/%/%/%.15/%.1/%/%.1/%/%">
+      <details key="start" value="934"/>
+      <details key="end" value="947"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/generateOperation/%/%/%.15/%.1/%/%.1/%/%/o">
+      <details key="start" value="934"/>
+      <details key="end" value="935"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/generateOperation/%/%/%.15/%.1/%/%.1/%.1">
+      <details key="start" value="959"/>
+      <details key="end" value="965"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/generateOperation/%/%/%.15/%.1/%.1">
+      <details key="start" value="970"/>
+      <details key="end" value="1003"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/generateOperation/%/%/%.15/%.1/%.1/%">
+      <details key="start" value="971"/>
+      <details key="end" value="995"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/generateOperation/%/%/%.15/%.1/%.1/%/%">
+      <details key="start" value="971"/>
+      <details key="end" value="984"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/generateOperation/%/%/%.15/%.1/%.1/%/%/o">
+      <details key="start" value="971"/>
+      <details key="end" value="972"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/generateOperation/%/%/%.15/%.1/%.1/%.1">
+      <details key="start" value="996"/>
+      <details key="end" value="1002"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/generateOperation/%/%/%.16">
+      <details key="start" value="1023"/>
+      <details key="end" value="1026"/>
+      <details key="line" value="29"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/generateOperation/%/%/o">
+      <details key="start" value="199"/>
+      <details key="end" value="212"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/generateOperation/%/%/%.17">
+      <details key="start" value="215"/>
+      <details key="end" value="239"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/generateOperation/%/%/%.17/c">
+      <details key="start" value="215"/>
+      <details key="end" value="216"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/generateOperation/%/%.1">
+      <details key="start" value="168"/>
+      <details key="end" value="190"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/generateOperation/%/%.1/c">
+      <details key="start" value="169"/>
+      <details key="end" value="170"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/generateOperation/%/%.1/%">
+      <details key="start" value="183"/>
+      <details key="end" value="188"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/generateOperation/%/%.2">
+      <details key="start" value="1034"/>
+      <details key="end" value="1185"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/generateOperation/%/%.2/%">
+      <details key="start" value="1042"/>
+      <details key="end" value="1183"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/generateOperation/%/%.2/%/%">
+      <details key="start" value="1092"/>
+      <details key="end" value="1112"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/generateOperation/%/%.2/%/%.1">
+      <details key="start" value="1113"/>
+      <details key="end" value="1126"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/generateOperation/%/%.2/%/%.1/o">
+      <details key="start" value="1113"/>
+      <details key="end" value="1114"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/generateOperation/%/%.2/%/%.2">
+      <details key="start" value="1128"/>
+      <details key="end" value="1129"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/generateOperation/%/%.2/%/%.3">
+      <details key="start" value="1130"/>
+      <details key="end" value="1138"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/generateOperation/%/%.2/%/%.3/o">
+      <details key="start" value="1130"/>
+      <details key="end" value="1131"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/generateOperation/%/%.2/%/%.4">
+      <details key="start" value="1140"/>
+      <details key="end" value="1141"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/generateOperation/%/%.2/%/%.5">
+      <details key="start" value="1173"/>
+      <details key="end" value="1177"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/generateOperation/%/%.2/%/o">
+      <details key="start" value="1048"/>
+      <details key="end" value="1061"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/generateOperation/%/%.2/%/%.6">
+      <details key="start" value="1064"/>
+      <details key="end" value="1088"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/generateOperation/%/%.2/%/%.6/c">
+      <details key="start" value="1064"/>
+      <details key="end" value="1065"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/generateOperation/c">
+      <details key="start" value="144"/>
+      <details key="end" value="160"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

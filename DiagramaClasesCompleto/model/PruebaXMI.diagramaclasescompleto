@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Paquete1">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Domicilio">
+      <atributos_contenidos nombre="calle" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="numero" visibilidad="private"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="haciaLocalidad" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona">
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String" pseudonimo=""/>
+      <atributos_contenidos nombre="dni" visibilidad="private"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.0" nombre="haciaDomicilio" origen="//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.3" nombre="haciaLibro" tipo="composicion" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Localidad">
+      <atributos_contenidos nombre="denominacion" visibilidad="private" tipo="String"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Libro">
+      <atributos_contenidos nombre="titulo" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="paginas" visibilidad="private"/>
+      <atributos_contenidos nombre="autor" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="genero" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="fecha" visibilidad="private"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.4" nombre="haciaAutor" multiplicidad="manyToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Autor">
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="bibliografia" visibilidad="private" tipo="String"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+  <artefacto_contenido/>
+  <configuraciondb/>
+  <configuraciondocker/>
+  <configuracionlenguaje/>
+  <configuracionmicroservicios/>
+</diagramaClasesCompleto:DiagramaClases>

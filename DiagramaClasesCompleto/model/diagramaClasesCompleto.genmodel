@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DiagramaClasesCompleto/src-gen" creationIcons="false"
+    editDirectory="/DiagramaClasesCompleto.edit/src-gen" editorDirectory="/DiagramaClasesCompleto.editor/src-gen"
+    modelPluginID="DiagramaClasesCompleto" modelName="DiagramaClasesCompleto" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>diagramaClasesCompleto.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="DiagramaClasesCompleto" disposableProviderFactory="true" ecorePackage="diagramaClasesCompleto.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoRelacion">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/unidireccional"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/bidireccional"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/composicion"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/agregacion"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/dependenciaUso"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRelacion/dependenciaCreacion"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoDato">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/int"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/float"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/double"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/char"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/byte"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/String"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoDato/Date"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoRetorno">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/void"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/float"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/int"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/double"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/char"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/byte"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoRetorno/String"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//ModicadoresAcceso">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ModicadoresAcceso/package"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ModicadoresAcceso/private"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ModicadoresAcceso/public"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ModicadoresAcceso/protected"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//Multiplicidad">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Multiplicidad/oneToOne"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Multiplicidad/oneToMany"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Multiplicidad/manyToOne"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Multiplicidad/manyToMany"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//VerbosHTTP">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//VerbosHTTP/GET"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//VerbosHTTP/POST"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//VerbosHTTP/PUT"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//VerbosHTTP/DELETE"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//VerbosHTTP/PATCH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoTransferencia">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoTransferencia/String"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoTransferencia/Xml"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoTransferencia/Json"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoReinicio">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoReinicio/siempre"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoReinicio/nunca"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//ProveedorDb">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ProveedorDb/mySql"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ProveedorDb/Mongo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ProveedorDb/Oracle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//ProveedorDb/DB2"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//Lenguaje">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/java"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/python"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/NET"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//Lenguaje/node"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//RepresentacionGrafica">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/text"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/combo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/radio"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/checkbox"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//RepresentacionGrafica/date"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaClasesCompleto.ecore#//TipoABM">
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/simple"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/seleccionable"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroDetalle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroComboDetalle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroDetalleCombo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/maestroComboDetalleCombo"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaClasesCompleto.ecore#//TipoABM/sinRepresentacion"/>
+    </genEnums>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//DiagramaClases">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/packages_contenidos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/artefacto_contenido"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuraciondb"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuraciondocker"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuracionlenguaje"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//DiagramaClases/configuracionmicroservicios"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Clasificador">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clasificador/nombre"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clasificador/atributos_contenidos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clasificador/operaciones_contenidas"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clasificador/herencias_contenidas"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Clase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clase/relaciones_contenidas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esAbstracta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Clase/realizaciones_contenidas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esAsociativa"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/esAuditable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Clase/tieneABM"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Interface"/>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Relacion">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Relacion/destino"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/tipo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/multiplicidad"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Relacion/origen"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Relacion/clases_asociativas_contenidas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/esFinal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/esStatic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/visibilidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Relacion/tipoABM"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Operacion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Operacion/tipoRetorno"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Operacion/esAbstracta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/parametros_contenidos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/endpoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Operacion/parametros_internos"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Atributo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/tipo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/esAuditable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/pseudonimo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Atributo/representacionGrafica"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Package/clasificadores_contenidos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Package/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Herencia">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Herencia/origen"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Herencia/destino"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Realizacion">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Realizacion/destino"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagramaClasesCompleto.ecore#//Realizacion/origen"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//Artefacto">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Artefacto/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Artefacto/grupoId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Artefacto/artefactotId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Artefacto/descripcion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Artefacto/version"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagramaClasesCompleto.ecore#//Retornable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Retornable/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Retornable/visibilidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Retornable/esFinal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//Retornable/esStatic"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//EndPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//EndPoint/tipoVerdo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//EndPoint/tipoTransferenciaEntrada"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//EndPoint/tipoTransferenciaSalida"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//EndPoint/nombrePublicado"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionDB">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/dbNombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/dbUsuario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/dbPuerto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/ip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/dbContrasena"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/serverPuerto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDB/tipoProveedor"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionDocker">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDocker/nombreContenedor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDocker/puertoInterior"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDocker/tipoReinicio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionDocker/nombreImagen"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionLenguaje">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionLenguaje/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionLenguaje/lenguaje"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ParametroInterno">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ParametroInterno/tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios/ipDiscovery"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaClasesCompleto.ecore#//ConfiguracionMicroservicios/puertoDiscovery"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

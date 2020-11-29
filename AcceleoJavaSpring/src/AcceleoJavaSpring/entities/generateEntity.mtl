@@ -1,0 +1,82 @@
+[comment encoding = UTF-8 /]
+[module generateEntity('http://www.example.org/diagramaClasesCompleto')]
+[import AcceleoJavaSpring::Property::generateProperty/]
+[import AcceleoJavaSpring::Operation::generateOperation/]
+[import AcceleoJavaSpring::Relation::generateRelation/]
+[import AcceleoJavaSpring::Relation::generateImplementation/]
+[import AcceleoJavaSpring::Relation::generateExtension/]
+
+[template public generateEntity(raiz : DiagramaClases)]
+[for (paquete : Package | raiz.packages_contenidos)]
+	
+[for (i : Clase | paquete.clasificadores_contenidos->filter(Clase))]
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/entities/'+paquete.nombre+'/'+ i.nombre +'.java', false, 'UTF-8')]
+package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[paquete.nombre/];
+[if (not (i.relaciones_contenidas->isEmpty()))]
+import javax.persistence.JoinColumn;
+import javax.persistence.CascadeType;
+[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToOne))]
+import javax.persistence.OneToOne;
+[/if]
+[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany))]
+import javax.persistence.OneToMany;
+[if (not(i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany)))]
+import javax.persistence.JoinTable;
+import java.util.ArrayList;
+import java.util.List;
+import lombok.Builder.Default;
+[/if]
+[/if]
+[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToOne))]
+import javax.persistence.ManyToOne;
+[/if]
+[if (i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::manyToMany))]
+import javax.persistence.ManyToMany;
+[if (not(i.relaciones_contenidas->exists(multiplicidad = Multiplicidad::oneToMany)))]
+import javax.persistence.JoinTable;
+import java.util.ArrayList;
+import java.util.List;
+import lombok.Builder.Default;
+[/if]
+[/if]
+[/if]
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+[if (i.esAuditable)]import org.hibernate.envers.Audited;[/if]
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+[if (i.herencias_contenidas->size()=0)]
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.Base;
+[elseif]
+[for (h : Herencia | i.herencias_contenidas)]
+[for (paq : Package | raiz.packages_contenidos)]
+[for (clase : Clase | paq.clasificadores_contenidos->filter(Clase))]
+	[if (h.destino.nombre = clase.nombre)]
+	import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].[paq.nombre/].[h.destino.nombre/];
+	[/if]
+[/for]
+[/for]
+[/for]
+[/if]
+	
+@Entity
+@Table(name= "[i.nombre.toLowerFirst()/]")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+[if (i.esAuditable)]@Audited[/if]
+public [if(i.esAbstracta)]abstract [/if]class [i.nombre/] [generateExtension(i)/] [generateImplementation(i)/] {
+[generateProperty(i)/]
+[generateRelation(i,paquete,raiz)/]
+}
+[/file]
+[/for]
+[/for]
+[/template]
+
+
+

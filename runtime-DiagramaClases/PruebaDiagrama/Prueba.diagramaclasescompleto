@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Paquete1">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona" tieneABM="true">
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
+      <atributos_contenidos nombre="dni" visibilidad="private"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+  <artefacto_contenido/>
+  <configuraciondb dbNombre="bd" dbUsuario="root" dbPuerto="3306"/>
+  <configuraciondocker/>
+  <configuracionlenguaje version="11"/>
+  <configuracionmicroservicios/>
+</diagramaClasesCompleto:DiagramaClases>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateBaseControllerImpl" nsURI="AcceleoJavaSpring::controllers::generateBaseControllerImpl" startHeaderPosition="29" endHeaderPosition="404">
+    <input>
+      <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateBaseControllerImpl" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".controllers;&#xA;&#xA;import "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".entities.Base;&#xA;import "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".services.BaseServiceImpl;&#xA;import org.springframework.beans.factory.annotation.Autowired;&#xA;import org.springframework.data.domain.Pageable;&#xA;import org.springframework.http.HttpStatus;&#xA;import org.springframework.http.ResponseEntity;&#xA;import org.springframework.web.bind.annotation.*;&#xA;&#xA;public abstract class BaseControllerImpl&lt;E extends Base, S extends BaseServiceImpl&lt;E,Long>> implements BaseController&lt;E,Long>{&#xA;&#xA;    @Autowired&#xA;    protected S servicio;&#xA;&#xA;    @GetMapping(&quot;&quot;)&#xA;    public ResponseEntity&lt;?> getAll() {&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll());&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;    }&#xA;&#xA;    @GetMapping(&quot;/paged&quot;)&#xA;    public ResponseEntity&lt;?> getAll(Pageable pageable){&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll(pageable));&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;    }&#xA;&#xA;    @GetMapping(&quot;/{id}&quot;)&#xA;    public ResponseEntity&lt;?> getOne(@PathVariable Long id) {&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.findById(id));&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;    }&#xA;&#xA;    @PostMapping(&quot;&quot;)&#xA;    public ResponseEntity&lt;?> save(@RequestBody E entity) {&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.save(entity));&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;&#xA;    }&#xA;&#xA;    @PutMapping(&quot;/{id}&quot;)&#xA;    public ResponseEntity&lt;?> update(@PathVariable Long id,@RequestBody E entity) {&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.update(id,entity));&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;    }&#xA;&#xA;    @DeleteMapping(&quot;/{id}&quot;)&#xA;    public ResponseEntity&lt;?> delete(@PathVariable Long id) {&#xA;        try{&#xA;            return ResponseEntity.status(HttpStatus.OK).body(servicio.delete(id));&#xA;        }catch (Exception e){&#xA;            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error\&quot;}&quot;);&#xA;        }&#xA;    }&#xA;}&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main/java/">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/substituteAll">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+                        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                </argument>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generateBaseControllerImpl/raiz">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/controllers/BaseControllerImpl.java">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <parameter name="raiz">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="substituteAll">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+        <eParameters name="replacement">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="+">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateBaseControllerImpl">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateBaseControllerImpl"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="raiz">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_DiagramaClases_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateBaseControllerImpl">
+      <details key="start" value="115"/>
+      <details key="end" value="3067"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateBaseControllerImpl/%">
+      <details key="start" value="183"/>
+      <details key="end" value="3055"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateBaseControllerImpl/%/%">
+      <details key="start" value="363"/>
+      <details key="end" value="371"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateBaseControllerImpl/%/%.1">
+      <details key="start" value="372"/>
+      <details key="end" value="404"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateBaseControllerImpl/%/%.1/%">
+      <details key="start" value="372"/>
+      <details key="end" value="396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateBaseControllerImpl/%/%.1/%/raiz">
+      <details key="start" value="372"/>
+      <details key="end" value="376"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateBaseControllerImpl/%/%.2">
+      <details key="start" value="406"/>
+      <details key="end" value="407"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateBaseControllerImpl/%/%.3">
+      <details key="start" value="408"/>
+      <details key="end" value="445"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateBaseControllerImpl/%/%.3/%">
+      <details key="start" value="408"/>
+      <details key="end" value="432"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateBaseControllerImpl/%/%.3/%/raiz">
+      <details key="start" value="408"/>
+      <details key="end" value="412"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateBaseControllerImpl/%/%.4">
+      <details key="start" value="447"/>
+      <details key="end" value="469"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateBaseControllerImpl/%/%.5">
+      <details key="start" value="470"/>
+      <details key="end" value="502"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateBaseControllerImpl/%/%.5/%">
+      <details key="start" value="470"/>
+      <details key="end" value="494"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateBaseControllerImpl/%/%.5/%/raiz">
+      <details key="start" value="470"/>
+      <details key="end" value="474"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateBaseControllerImpl/%/%.6">
+      <details key="start" value="504"/>
+      <details key="end" value="505"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateBaseControllerImpl/%/%.7">
+      <details key="start" value="506"/>
+      <details key="end" value="543"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateBaseControllerImpl/%/%.7/%">
+      <details key="start" value="506"/>
+      <details key="end" value="530"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateBaseControllerImpl/%/%.7/%/raiz">
+      <details key="start" value="506"/>
+      <details key="end" value="510"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateBaseControllerImpl/%/%.8">
+      <details key="start" value="545"/>
+      <details key="end" value="568"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateBaseControllerImpl/%/%.9">
+      <details key="start" value="569"/>
+      <details key="end" value="601"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateBaseControllerImpl/%/%.9/%">
+      <details key="start" value="569"/>
+      <details key="end" value="593"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateBaseControllerImpl/%/%.9/%/raiz">
+      <details key="start" value="569"/>
+      <details key="end" value="573"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateBaseControllerImpl/%/%.10">
+      <details key="start" value="603"/>
+      <details key="end" value="604"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateBaseControllerImpl/%/%.11">
+      <details key="start" value="605"/>
+      <details key="end" value="642"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateBaseControllerImpl/%/%.11/%">
+      <details key="start" value="605"/>
+      <details key="end" value="629"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateBaseControllerImpl/%/%.11/%/raiz">
+      <details key="start" value="605"/>
+      <details key="end" value="609"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateBaseControllerImpl/%/%.12">
+      <details key="start" value="644"/>
+      <details key="end" value="3048"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateBaseControllerImpl/%/%.13">
+      <details key="start" value="190"/>
+      <details key="end" value="344"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateBaseControllerImpl/%/%.13/%">
+      <details key="start" value="190"/>
+      <details key="end" value="305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateBaseControllerImpl/%/%.13/%/%">
+      <details key="start" value="190"/>
+      <details key="end" value="267"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateBaseControllerImpl/%/%.13/%/%/%">
+      <details key="start" value="190"/>
+      <details key="end" value="263"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%">
+      <details key="start" value="190"/>
+      <details key="end" value="206"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1">
+      <details key="start" value="207"/>
+      <details key="end" value="263"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1/%">
+      <details key="start" value="207"/>
+      <details key="end" value="239"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1/%/%">
+      <details key="start" value="207"/>
+      <details key="end" value="231"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1/%/%/raiz">
+      <details key="start" value="207"/>
+      <details key="end" value="211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1/%.1">
+      <details key="start" value="254"/>
+      <details key="end" value="257"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateBaseControllerImpl/%/%.13/%/%/%/%.1/%.2">
+      <details key="start" value="259"/>
+      <details key="end" value="262"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateBaseControllerImpl/%/%.13/%/%/%.1">
+      <details key="start" value="264"/>
+      <details key="end" value="267"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateBaseControllerImpl/%/%.13/%/%.1">
+      <details key="start" value="268"/>
+      <details key="end" value="305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateBaseControllerImpl/%/%.13/%/%.1/%">
+      <details key="start" value="268"/>
+      <details key="end" value="292"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateBaseControllerImpl/%/%.13/%/%.1/%/raiz">
+      <details key="start" value="268"/>
+      <details key="end" value="272"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateBaseControllerImpl/%/%.13/%.1">
+      <details key="start" value="306"/>
+      <details key="end" value="344"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateBaseControllerImpl/%/%.14">
+      <details key="start" value="353"/>
+      <details key="end" value="360"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateBaseControllerImpl/raiz">
+      <details key="start" value="159"/>
+      <details key="end" value="180"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

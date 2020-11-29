@@ -1,0 +1,24 @@
+[comment encoding = UTF-8 /]
+[module generateServices('http://www.example.org/diagramaClasesCompleto')]
+[import AcceleoJavaSpring::services::generateBaseService/]
+[import AcceleoJavaSpring::services::generateServicesImpl/]
+
+[template public generateServices(raiz : DiagramaClases)]
+
+[for (paquete : Package | raiz.packages_contenidos)]	
+[for (clase : Clase | paquete.clasificadores_contenidos->filter(Clase))]
+[if (clase.tieneABM)]
+
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/services/'+clase.nombre+'Service.java', false, 'UTF-8')]
+package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].services;
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[paquete.nombre/].[clase.nombre/];
+
+public interface [clase.nombre/]Service extends BaseService<[clase.nombre/],Long>{
+}
+[generateServicesImpl(clase, paquete, raiz)/]
+[/file]
+[/if]
+[/for]
+[/for]
+
+[/template]

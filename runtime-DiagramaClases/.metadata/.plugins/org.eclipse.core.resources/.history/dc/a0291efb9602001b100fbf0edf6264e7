@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Prueba">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Persona">
+      <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+</diagramaClasesCompleto:DiagramaClases>

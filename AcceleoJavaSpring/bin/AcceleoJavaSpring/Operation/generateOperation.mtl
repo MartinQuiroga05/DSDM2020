@@ -1,0 +1,36 @@
+[comment encoding = UTF-8 /]
+[module generateOperation('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generateOperation(c : Clasificador)]
+[if (c.oclIsTypeOf(Clase))]
+[for (o : Operacion | c.operaciones_contenidas)]
+[o.visibilidad/] [if (o.esStatic)]static[/if] [if (o.esFinal)]final[/if] [o.tipoRetorno/] [o.nombre/](
+[for (param : Atributo | o.parametros_contenidos->filter(Atributo))]
+	[param.tipo/] [param.nombre/],
+[/for]
+[comment falta arreglar pasaje de funcion como parametro/]
+[for (param : Operacion | o.parametros_contenidos->filter(Operacion))]
+	[param.nombre/]([param.parametros_internos/]),
+[/for]
+){
+[if (o.tipoRetorno.toString()='boolean')]
+return false;
+[/if]
+[if ((o.tipoRetorno.toString()='String')
+or (o.tipoRetorno.toString()='Date'))]
+return null;
+[/if]
+[if ((o.tipoRetorno.toString()='int')
+or(o.tipoRetorno.toString()='double')
+or(o.tipoRetorno.toString()='float')
+or(o.tipoRetorno.toString()='byte')
+or(o.tipoRetorno.toString()='char'))]
+return 0;
+[/if]}
+[/for]
+[else]
+[for (o : Operacion | c.operaciones_contenidas)]
+public static final [o.tipoRetorno/] [o.nombre/]([comment faltan los parametros/]);
+[/for]
+[/if]
+[/template]

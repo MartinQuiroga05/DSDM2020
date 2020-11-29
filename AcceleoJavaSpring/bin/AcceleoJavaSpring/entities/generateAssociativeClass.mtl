@@ -1,0 +1,56 @@
+[comment encoding = UTF-8 /]
+[module generateAssociativeClass('http://www.example.org/diagramaClasesCompleto')]
+[import AcceleoJavaSpring::Property::generateProperty/]
+[import AcceleoJavaSpring::Relation::generateImplementation /]
+[import AcceleoJavaSpring::Relation::generateExtension /]
+[import AcceleoJavaSpring::Relation::generateRelation /]
+
+[template public generateAssociativeClass(raiz: DiagramaClases)]
+
+[for (paquete : Package | raiz.packages_contenidos)]
+[for (c : Clase | paquete.clasificadores_contenidos->filter(Clase))]
+[for (r : Relacion | c.relaciones_contenidas)]
+[for (i : Clase | r.clases_asociativas_contenidas)]
+	[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/entities/'+paquete.nombre+'/'+i.nombre+'.java', false, 'UTF-8')]
+	package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[paquete.nombre/];
+	
+	import java.io.Serializable;
+	import javax.persistence.CascadeType;
+	import javax.persistence.Column;
+	import javax.persistence.Entity;
+	import javax.persistence.GeneratedValue;
+	import javax.persistence.GenerationType;
+	import javax.persistence.Id;
+	import javax.persistence.OneToOne;
+	import javax.persistence.JoinColumn;
+	import javax.persistence.Table;
+	[if (i.esAuditable)]import org.hibernate.envers.Audited;[/if]
+	import lombok.AllArgsConstructor;
+	import lombok.Builder;
+	import lombok.Data;
+	import lombok.NoArgsConstructor;
+
+	@Entity
+	@Table(name= "[i.nombre.toLowerFirst()/]")
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	[if (not i.esAbstracta)]@Builder[/if]
+	[if (i.esAuditable)]@Audited[/if]
+	public [if(i.esAbstracta)]abstract [/if]class [i.nombre/] [generateExtension(i)/] [generateImplementation(i)/] {
+	[generateProperty(i)/]
+	[generateRelation(i, paquete, raiz)/]
+	@OneToOne(cascade= CascadeType.ALL)
+	@JoinColumn(name="fk_[r.origen.nombre.toLowerFirst()/]")
+	[r.visibilidad/] [r.origen.nombre/] [r.origen.nombre.toLowerFirst()/];
+	
+	@OneToOne(cascade= CascadeType.ALL)
+	@JoinColumn(name="fk_[r.destino.nombre.toLowerFirst()/]")
+	[r.visibilidad/] [r.destino.nombre/] [r.destino.nombre.toLowerFirst()/];
+	}
+	[/file]
+[/for]
+[/for]
+[/for]
+[/for]
+[/template]

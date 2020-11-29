@@ -1,0 +1,86 @@
+[comment encoding = UTF-8 /]
+[module generateRelation('http://www.example.org/diagramaClasesCompleto')]
+[import AcceleoJavaSpring::Relation::generateRelationNotation/]
+
+[template public generateRelation(clase : Clase, paquete : Package, raiz: DiagramaClases)]
+
+[for (relacion : Relacion | clase.relaciones_contenidas)]
+[if (relacion.tipo=TipoRelacion::unidireccional)]
+	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]
+		[generateRelationOneToOne(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+	[elseif (relacion.multiplicidad=Multiplicidad::oneToMany)]
+		[generateRelationOneToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToOne)]
+		[generateRelationManyToOne()/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToMany)]
+		[generateRelationManyToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[/if]
+[elseif (relacion.tipo=TipoRelacion::bidireccional)]
+	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]
+		[if (relacion.destino.nombre=clase.nombre)]
+			[generateBidirectionalDestinoOneToOne(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.origen.nombre/] [relacion.nombre/];
+		[else]
+			[generateRelationOneToOne(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+		[/if]
+	[elseif (relacion.multiplicidad=Multiplicidad::oneToMany)]
+		[if (relacion.destino.nombre=clase.nombre)]
+			[generateBidirectionalDestinoOneToMany(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.origen.nombre/] [relacion.nombre/];
+		[else]
+			[generateBidirectionalOrigenOneToMany(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+		[/if]
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToOne)]
+		[if (relacion.destino.nombre=clase.nombre)]
+			[generateBidirectionalOrigenOneToMany(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.origen.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.origen.nombre/]>();
+		[else]
+			[generateRelationManyToOne(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+		[/if]
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToMany)]
+		[if (relacion.destino.nombre=clase.nombre)]
+			[generateBidirectionalDestinoManyToMany(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.origen.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.origen.nombre/]>();
+		[else]
+			[generateBidirectionalOrigenManyToMany(relacion)/]
+			[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+		[/if]
+	[/if]
+[elseif (relacion.tipo=TipoRelacion::agregacion)]
+	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]
+		[generateRelationOneToOne(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+	[elseif (relacion.multiplicidad=Multiplicidad::oneToMany)]
+		[generateRelationOneToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToOne)]
+		[generateRelationManyToOne()/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/];
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToMany)]
+		[generateRelationManyToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[/if]
+[elseif (relacion.tipo=TipoRelacion::composicion)]
+	[if (relacion.multiplicidad=Multiplicidad::oneToOne)]
+		[generateRelationOneToOne(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/] = new [relacion.destino.nombre/]();
+	[elseif (relacion.multiplicidad=Multiplicidad::oneToMany)]
+		[generateRelationOneToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToOne)]
+		[generateRelationManyToOne()/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] [relacion.destino.nombre/] [relacion.nombre/] = new [relacion.destino.nombre/]();
+	[elseif (relacion.multiplicidad=Multiplicidad::manyToMany)]
+		[generateRelationManyToMany(relacion)/]
+		[relacion.visibilidad/][if (relacion.esFinal)] final [/if][if (relacion.esStatic)] static [/if] List<[relacion.destino.nombre/]> [relacion.nombre/] = new ArrayList<[relacion.destino.nombre/]>();
+	[/if]
+[/if]
+[/for]
+[/template]

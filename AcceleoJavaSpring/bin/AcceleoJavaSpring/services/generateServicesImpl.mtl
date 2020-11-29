@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[module generateServicesImpl('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateServicesImpl(clase : Clase, paquete : Package, raiz : DiagramaClases)]
+
+[file ('src/main/java/'+raiz.artefacto_contenido.grupoId.substituteAll('.', '/')+'/'+raiz.artefacto_contenido.artefactotId+'/services/'+clase.nombre+'ServiceImpl.java', false, 'UTF-8')]
+package [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].services;
+
+
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].entities.[paquete.nombre/].[clase.nombre/];
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].repositories.BaseRepository;
+import [raiz.artefacto_contenido.grupoId/].[raiz.artefacto_contenido.artefactotId/].repositories.[clase.nombre/]Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class [clase.nombre/]ServiceImpl extends BaseServiceImpl<[clase.nombre/],Long> implements [clase.nombre/]Service{
+
+	@Autowired
+	private [clase.nombre/]Repository [clase.nombre/]Repository;
+	
+	public [clase.nombre/]ServiceImpl(BaseRepository<[clase.nombre/], Long> baseRepository){ super(baseRepository); }
+}
+[/file]
+[/template]

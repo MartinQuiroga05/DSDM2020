@@ -1,0 +1,8 @@
+[comment encoding = UTF-8 /]
+[module generateImplementation('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generateImplementation(c : Clase)]
+[for (i : Interface | c.realizaciones_contenidas.destino)]
+	implements [i.nombre/]
+[/for]
+[/template]

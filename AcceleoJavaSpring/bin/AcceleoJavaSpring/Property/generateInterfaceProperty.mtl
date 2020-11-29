@@ -1,0 +1,8 @@
+[comment encoding = UTF-8 /]
+[module generateInterfaceProperty('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generateInterfaceProperty(i : Interface)]
+[for (a : Atributo | i.atributos_contenidos)]
+	[a.tipo/] [a.nombre/] = ;
+[/for]
+[/template]

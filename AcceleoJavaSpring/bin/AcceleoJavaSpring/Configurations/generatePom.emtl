@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generatePom" nsURI="AcceleoJavaSpring::Configurations::generatePom" startHeaderPosition="30" endHeaderPosition="741">
+    <input>
+      <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generatePom" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#xD;&#xA;&#x9;xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;>&#xD;&#xA;&#x9;&lt;modelVersion>4.0.0&lt;/modelVersion>&#xD;&#xA;&#x9;&lt;parent>&#xD;&#xA;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&lt;artifactId>spring-boot-starter-parent&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&lt;version>2.3.4.RELEASE&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;relativePath/> &lt;!-- lookup parent from repository -->&#xD;&#xA;&#x9;&lt;/parent>&#xD;&#xA;&#x9;&lt;groupId>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/grupoId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/groupId>&#xD;&#xA;&#x9;&lt;artifactId>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/artefactotId"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/artifactId>&#xD;&#xA;&#x9;&lt;version>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/version"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/version>&#xD;&#xA;&#x9;&lt;name>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/nombre"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/name>&#xD;&#xA;&#x9;&lt;description>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Artefacto"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/artefacto_contenido"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Artefacto/descripcion"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/description>&#xD;&#xA;&#xD;&#xA;&#x9;&lt;properties>&#xD;&#xA;&#x9;&#x9;&lt;java.version>"/>
+        <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/13/Sequence(String)">
+          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/13/OrderedSet(ConfiguracionLenguaje)">
+            <source xsi:type="ocl.ecore:VariableExp" name="raiz" referredVariable="/0/generatePom/raiz">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases/configuracionlenguaje"/>
+          </source>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generatePom/%/collect/temp1">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//ConfiguracionLenguaje"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//ConfiguracionLenguaje/version"/>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="temp1">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//ConfiguracionLenguaje"/>
+          </iterator>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/java.version>&#xD;&#xA;&#x9;&lt;/properties>&#xD;&#xA;&#xD;&#xA;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-boot-starter-data-jpa&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-boot-starter-data-rest&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-boot-starter-web&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>mysql&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>mysql-connector-java&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;scope>runtime&lt;/scope>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.projectlombok&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>lombok&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;optional>true&lt;/optional>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.hibernate&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>hibernate-envers&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-boot-starter-test&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;scope>test&lt;/scope>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;exclusions>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;exclusion>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;groupId>org.junit.vintage&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;artifactId>junit-vintage-engine&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/exclusion>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/exclusions>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.restdocs&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-restdocs-mockmvc&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;scope>test&lt;/scope>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&lt;/dependencies>&#xD;&#xA;&#xD;&#xA;&#x9;&lt;build>&#xD;&#xA;&#x9;&#x9;&lt;plugins>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;plugin>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;groupId>org.asciidoctor&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;artifactId>asciidoctor-maven-plugin&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;version>1.5.8&lt;/version>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;executions>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;execution>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;id>generate-docs&lt;/id>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;phase>prepare-package&lt;/phase>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;goals>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;goal>process-asciidoc&lt;/goal>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/goals>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;configuration>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;backend>html&lt;/backend>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;doctype>book&lt;/doctype>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/configuration>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/execution>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/executions>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.restdocs&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;artifactId>spring-restdocs-asciidoctor&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;version>${spring-restdocs.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/dependencies>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/plugin>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;plugin>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;groupId>org.springframework.boot&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;artifactId>spring-boot-maven-plugin&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/plugin>&#xD;&#xA;&#x9;&#x9;&lt;/plugins>&#xD;&#xA;&#x9;&lt;/build>&#xD;&#xA;&lt;/project>&#xD;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pom.xml">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <parameter name="raiz">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generatePom">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generatePom"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="raiz">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="diagramaClasesCompleto_DiagramaClases_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(ConfiguracionLenguaje)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//ConfiguracionLenguaje"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(String)" instanceClassName="java.util.List">
+      <elementType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generatePom">
+      <details key="start" value="103"/>
+      <details key="end" value="3370"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generatePom/%">
+      <details key="start" value="157"/>
+      <details key="end" value="3357"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generatePom/%/%">
+      <details key="start" value="193"/>
+      <details key="end" value="708"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generatePom/%/%.1">
+      <details key="start" value="709"/>
+      <details key="end" value="741"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generatePom/%/%.1/%">
+      <details key="start" value="709"/>
+      <details key="end" value="733"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generatePom/%/%.1/%/raiz">
+      <details key="start" value="709"/>
+      <details key="end" value="713"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generatePom/%/%.2">
+      <details key="start" value="743"/>
+      <details key="end" value="768"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generatePom/%/%.3">
+      <details key="start" value="769"/>
+      <details key="end" value="806"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generatePom/%/%.3/%">
+      <details key="start" value="769"/>
+      <details key="end" value="793"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generatePom/%/%.3/%/raiz">
+      <details key="start" value="769"/>
+      <details key="end" value="773"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generatePom/%/%.4">
+      <details key="start" value="808"/>
+      <details key="end" value="833"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generatePom/%/%.5">
+      <details key="start" value="834"/>
+      <details key="end" value="866"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generatePom/%/%.5/%">
+      <details key="start" value="834"/>
+      <details key="end" value="858"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generatePom/%/%.5/%/raiz">
+      <details key="start" value="834"/>
+      <details key="end" value="838"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generatePom/%/%.6">
+      <details key="start" value="868"/>
+      <details key="end" value="887"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generatePom/%/%.7">
+      <details key="start" value="888"/>
+      <details key="end" value="919"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generatePom/%/%.7/%">
+      <details key="start" value="888"/>
+      <details key="end" value="912"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generatePom/%/%.7/%/raiz">
+      <details key="start" value="888"/>
+      <details key="end" value="892"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generatePom/%/%.8">
+      <details key="start" value="921"/>
+      <details key="end" value="944"/>
+      <details key="line" value="19"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generatePom/%/%.9">
+      <details key="start" value="945"/>
+      <details key="end" value="981"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generatePom/%/%.9/%">
+      <details key="start" value="945"/>
+      <details key="end" value="969"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generatePom/%/%.9/%/raiz">
+      <details key="start" value="945"/>
+      <details key="end" value="949"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generatePom/%/%.10">
+      <details key="start" value="983"/>
+      <details key="end" value="1032"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generatePom/%/collect">
+      <details key="start" value="1033"/>
+      <details key="end" value="1067"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generatePom/%/collect/%">
+      <details key="start" value="1033"/>
+      <details key="end" value="1059"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generatePom/%/collect/%/raiz">
+      <details key="start" value="1033"/>
+      <details key="end" value="1037"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generatePom/%/collect/%.1">
+      <details key="start" value="1060"/>
+      <details key="end" value="1067"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generatePom/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generatePom/%/collect/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generatePom/%/%.11">
+      <details key="start" value="1069"/>
+      <details key="end" value="3350"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generatePom/%/%.12">
+      <details key="start" value="164"/>
+      <details key="end" value="173"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generatePom/%/%.13">
+      <details key="start" value="182"/>
+      <details key="end" value="189"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generatePom/raiz">
+      <details key="start" value="132"/>
+      <details key="end" value="153"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>
